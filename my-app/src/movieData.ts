@@ -1,0 +1,401 @@
+// Centralized movie data for the app
+export const movieData: {
+  id: number;
+  title: string;
+  duration: string;
+  rating: number;
+  coverUrl: string;
+  description: string;
+  type: 'movie' | 'show';
+  dateViewed: string;
+  category: 'viewed' | '2watch';
+  genre: string;
+}[] = [
+  {
+    id: 1,
+    title: "The Cosmic Adventure",
+    duration: "2h 15min",
+    rating: 4.5,
+    coverUrl: "https://picsum.photos/300/450?random=1",
+    description: "A thrilling journey through space and time that challenges our understanding of reality.",
+    type: "movie",
+    dateViewed: "2025-10-15",
+    category: "viewed",
+    genre: "Sci-Fi"
+  },
+  {
+    id: 2,
+    title: "Lost in Paradise",
+    duration: "1h 55min",
+    rating: 3.8,
+    coverUrl: "https://picsum.photos/300/450?random=2",
+    description: "A heartwarming story about finding yourself in the most unexpected places.",
+    type: "movie",
+    dateViewed: "2025-09-28",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 3,
+    title: "The Last Stand",
+    duration: "2h 30min",
+    rating: 4.2,
+    coverUrl: "https://picsum.photos/300/450?random=3",
+    description: "An epic tale of courage and determination in the face of impossible odds.",
+    type: "movie",
+    dateViewed: "2025-11-02",
+    category: "2watch",
+    genre: "Action"
+  },
+  {
+    id: 4,
+    title: "Midnight Symphony",
+    duration: "45min per ep.",
+    rating: 4.7,
+    coverUrl: "https://picsum.photos/300/450?random=4",
+    description: "A musical journey that transcends genres and touches the soul.",
+    type: "show",
+    dateViewed: "2025-10-30",
+    category: "2watch",
+    genre: "Music"
+  },
+  {
+    id: 5,
+    title: "Digital Dreams",
+    duration: "1h per ep.",
+    rating: 3.9,
+    coverUrl: "https://picsum.photos/300/450?random=5",
+    description: "A mind-bending exploration of the thin line between reality and virtual worlds.",
+    type: "show",
+    dateViewed: "2025-11-05",
+    category: "viewed",
+    genre: "Sci-Fi"
+  },
+  {
+    id: 6,
+    title: "The Hidden Truth",
+    duration: "50min per ep.",
+    rating: 4.1,
+    coverUrl: "https://picsum.photos/300/450?random=6",
+    description: "A gripping mystery that keeps you guessing until the very end.",
+    type: "show",
+    dateViewed: "2025-11-08",
+    category: "2watch",
+    genre: "Mystery"
+  },
+  {
+    id: 7,
+    title: "Ocean's Whisper",
+    duration: "2h 5min",
+    rating: 4.0,
+    coverUrl: "https://picsum.photos/300/450?random=7",
+    description: "A contemplative drama set against the vastness of the sea.",
+    type: "movie",
+    dateViewed: "2025-08-12",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 8,
+    title: "Rogue Galaxy",
+    duration: "2h 20min",
+    rating: 4.3,
+    coverUrl: "https://picsum.photos/300/450?random=8",
+    description: "Space opera with high stakes and bold visuals.",
+    type: "movie",
+    dateViewed: "2025-07-22",
+    category: "viewed",
+    genre: "Sci-Fi"
+  },
+  {
+    id: 9,
+    title: "Silent Echoes",
+    duration: "1h 45min",
+    rating: 3.7,
+    coverUrl: "https://picsum.photos/300/450?random=9",
+    description: "An intimate portrait of life, memory, and loss.",
+    type: "movie",
+    dateViewed: "2025-06-30",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 10,
+    title: "Neon Streets",
+    duration: "1h 50min",
+    rating: 4.1,
+    coverUrl: "https://picsum.photos/300/450?random=10",
+    description: "A gritty crime thriller with a neon-lit backdrop.",
+    type: "movie",
+    dateViewed: "2025-05-18",
+    category: "viewed",
+    genre: "Thriller"
+  },
+  {
+    id: 11,
+    title: "Last Light",
+    duration: "2h 0min",
+    rating: 4.4,
+    coverUrl: "https://picsum.photos/300/450?random=11",
+    description: "A moving story about redemption and second chances.",
+    type: "movie",
+    dateViewed: "2025-04-02",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 12,
+    title: "Chasing Horizons",
+    duration: "2h 10min",
+    rating: 4.2,
+    coverUrl: "https://picsum.photos/300/450?random=12",
+    description: "An adventure across continents searching for meaning.",
+    type: "movie",
+    dateViewed: "2025-03-15",
+    category: "viewed",
+    genre: "Adventure"
+  },
+  // 10 additional dummy entries (13-22)
+  {
+    id: 13,
+    title: "Echoes of Tomorrow",
+    duration: "2h 8min",
+    rating: 4.0,
+    coverUrl: "https://picsum.photos/300/450?random=13",
+    description: "A sci-fi drama exploring fate and consequence.",
+    type: "movie",
+    dateViewed: "2025-02-11",
+    category: "viewed",
+    genre: "Sci-Fi"
+  },
+  {
+    id: 14,
+    title: "Wings of Glass",
+    duration: "1h 52min",
+    rating: 3.9,
+    coverUrl: "https://picsum.photos/300/450?random=14",
+    description: "A bittersweet tale of ambition and loss.",
+    type: "movie",
+    dateViewed: "2025-01-20",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 15,
+    title: "Paper Cities",
+    duration: "2h 5min",
+    rating: 4.1,
+    coverUrl: "https://picsum.photos/300/450?random=15",
+    description: "A drama about urban change and human resilience.",
+    type: "movie",
+    dateViewed: "2024-12-05",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 16,
+    title: "The Quiet Revolt",
+    duration: "1h 58min",
+    rating: 4.2,
+    coverUrl: "https://picsum.photos/300/450?random=16",
+    description: "A political thriller centered on grassroots movements.",
+    type: "movie",
+    dateViewed: "2024-11-11",
+    category: "viewed",
+    genre: "Thriller"
+  },
+  {
+    id: 17,
+    title: "Starlight Carnival",
+    duration: "1h 40min",
+    rating: 3.6,
+    coverUrl: "https://picsum.photos/300/450?random=17",
+    description: "A whimsical story of a traveling carnival.",
+    type: "movie",
+    dateViewed: "2024-10-02",
+    category: "viewed",
+    genre: "Fantasy"
+  },
+  {
+    id: 18,
+    title: "Broken Compass",
+    duration: "2h 12min",
+    rating: 4.3,
+    coverUrl: "https://picsum.photos/300/450?random=18",
+    description: "An intense survival drama in remote landscapes.",
+    type: "movie",
+    dateViewed: "2024-09-15",
+    category: "viewed",
+    genre: "Adventure"
+  },
+  {
+    id: 19,
+    title: "Hidden Frequencies",
+    duration: "50min per ep.",
+    rating: 4.0,
+    coverUrl: "https://picsum.photos/300/450?random=19",
+    description: "A serialized mystery unraveling over multiple seasons.",
+    type: "show",
+    dateViewed: "2024-08-22",
+    category: "2watch",
+    genre: "Mystery"
+  },
+  {
+    id: 20,
+    title: "Gold & Glass",
+    duration: "2h 3min",
+    rating: 3.8,
+    coverUrl: "https://picsum.photos/300/450?random=20",
+    description: "A period drama about family secrets and legacies.",
+    type: "movie",
+    dateViewed: "2024-07-30",
+    category: "viewed",
+    genre: "Period Drama"
+  },
+  {
+    id: 21,
+    title: "Velvet Night",
+    duration: "1h 47min",
+    rating: 4.1,
+    coverUrl: "https://picsum.photos/300/450?random=21",
+    description: "A neo-noir that follows a detective through the city's underbelly.",
+    type: "movie",
+    dateViewed: "2024-06-18",
+    category: "viewed",
+    genre: "Film Noir"
+  },
+  {
+    id: 22,
+    title: "Fragments of Sun",
+    duration: "1h 59min",
+    rating: 4.2,
+    coverUrl: "https://picsum.photos/300/450?random=22",
+    description: "A family saga spanning decades and continents.",
+    type: "movie",
+    dateViewed: "2024-05-06",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 23,
+    title: "Quantum Detectives",
+    duration: "55min per ep.",
+    rating: 4.6,
+    coverUrl: "https://picsum.photos/300/450?random=23",
+    description: "A sci-fi police procedural where crimes span multiple dimensions.",
+    type: "show",
+    dateViewed: "2025-11-01",
+    category: "viewed",
+    genre: "Sci-Fi"
+  },
+  {
+    id: 24,
+    title: "The Kitchen Chronicles",
+    duration: "45min per ep.",
+    rating: 4.3,
+    coverUrl: "https://picsum.photos/300/450?random=24",
+    description: "A heartwarming series about family recipes and the stories behind them.",
+    type: "show",
+    dateViewed: "2025-10-25",
+    category: "2watch",
+    genre: "Reality"
+  },
+  {
+    id: 25,
+    title: "Dark Waters Academy",
+    duration: "50min per ep.",
+    rating: 4.4,
+    coverUrl: "https://picsum.photos/300/450?random=25",
+    description: "A supernatural teen drama set in an elite underwater boarding school.",
+    type: "show",
+    dateViewed: "2025-09-15",
+    category: "viewed",
+    genre: "Teen Drama"
+  },
+  {
+    id: 26,
+    title: "Time Traders",
+    duration: "1h per ep.",
+    rating: 4.7,
+    coverUrl: "https://picsum.photos/300/450?random=26",
+    description: "Historical fantasy about merchants who travel through time to trade artifacts.",
+    type: "show",
+    dateViewed: "2025-08-30",
+    category: "2watch",
+    genre: "Historical Fantasy"
+  },
+  {
+    id: 27,
+    title: "Urban Legends Live",
+    duration: "40min per ep.",
+    rating: 4.2,
+    coverUrl: "https://picsum.photos/300/450?random=27",
+    description: "Reality-style investigation of modern urban myths and legends.",
+    type: "show",
+    dateViewed: "2025-07-22",
+    category: "viewed",
+    genre: "Reality"
+  },
+  {
+    id: 28,
+    title: "The Botanical Detective",
+    duration: "45min per ep.",
+    rating: 4.1,
+    coverUrl: "https://picsum.photos/300/450?random=28",
+    description: "A genius botanist solves crimes using plant science and deduction.",
+    type: "show",
+    dateViewed: "2025-06-15",
+    category: "2watch",
+    genre: "Mystery"
+  },
+  {
+    id: 29,
+    title: "Silicon Dreams",
+    duration: "55min per ep.",
+    rating: 4.8,
+    coverUrl: "https://picsum.photos/300/450?random=29",
+    description: "Drama series following the lives of tech startup founders in near-future Silicon Valley.",
+    type: "show",
+    dateViewed: "2025-05-01",
+    category: "viewed",
+    genre: "Drama"
+  },
+  {
+    id: 30,
+    title: "Ghost Writers",
+    duration: "50min per ep.",
+    rating: 4.5,
+    coverUrl: "https://picsum.photos/300/450?random=30",
+    description: "A team of ghost writers discover their novels are coming true in mysterious ways.",
+    type: "show",
+    dateViewed: "2025-04-10",
+    category: "2watch",
+    genre: "Supernatural"
+  },
+  {
+    id: 31,
+    title: "Culinary Time Machine",
+    duration: "45min per ep.",
+    rating: 4.3,
+    coverUrl: "https://picsum.photos/300/450?random=31",
+    description: "Chefs travel through time to explore historical cuisines and cooking methods.",
+    type: "show",
+    dateViewed: "2025-03-20",
+    category: "viewed",
+    genre: "Reality"
+  },
+  {
+    id: 32,
+    title: "Parallel Play",
+    duration: "1h per ep.",
+    rating: 4.6,
+    coverUrl: "https://picsum.photos/300/450?random=32",
+    description: "A drama about actors whose parallel universe versions begin bleeding into their lives.",
+    type: "show",
+    dateViewed: "2025-02-05",
+    category: "2watch",
+    genre: "Sci-Fi"
+  }
+];
+
+export default movieData;

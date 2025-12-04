@@ -1,0 +1,23 @@
+{
+  "name": "Tracker for media library",
+  "description": "Checks if you watch movies or shows on lookmovie2k.to and tracks them in your media library.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://*.lookmovie2k.to/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "app.js",
+    "type": "module"
+  }
+}
